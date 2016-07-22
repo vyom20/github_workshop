@@ -16,7 +16,8 @@ while (my $line = <FILE>) {
 	$line = uc($line);
 	next if ($line =~ m/^SOURCE_NAME/);
 	
-	$line =~s///g;
+	$line =~s/
+//g;
 	my @ele = split(/\t/, $line);
 	push(@{$slink->{$ele[0]}},$ele[1]);
 	push(@all_unps, ($ele[0], $ele[1]));
@@ -24,8 +25,8 @@ while (my $line = <FILE>) {
 }
 close(FILE);
 
-print Dumper($slink->{'P84085'});
-exit;
+#print Dumper($slink->{'P84085'});
+#exit;
 
 @all_unps = sort @all_unps;
 my ($fp, $test);
