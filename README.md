@@ -9,6 +9,8 @@ This repository is to extract directed PPIs from STRING-DB and process the data 
 
 This is useful as it helps identify high-quality PPIs and fursther explore the biological network space towards elucidating synergistic behaviour of combinations.
 
+#### Playing with git formatting
+
 ## Team
 So far my team is small - just 1 person, but I'm willing to work with you!
 
